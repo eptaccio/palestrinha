@@ -1,0 +1,20 @@
+version: '2'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: palestrinha
+    command: npm run dev
+    volumes:
+      - ./:/app
+    ports:
+        - 3000:3000
+    environment:
+      - DB_URI=mongodb://mongodb:27017/palestrinha
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+        - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null

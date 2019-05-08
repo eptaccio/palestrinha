@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-dev": "jest --watchAll",
+    "lint": "standard",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^3.17.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.5",
+    "mongoose-paginate": "^5.0.3"
+  },
+  "standard": {
+    "globals": [
+      "test",
+      "expect",
+      "jest"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "mockdate": "^2.0.2",
+    "nodemon": "^1.19.0",
+    "standard": "^12.0.1"
+  }
+}
