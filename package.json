@@ -2,6 +2,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "name": "api",
   "scripts": {
     "test": "jest",
     "test-dev": "jest --watchAll",
